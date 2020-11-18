@@ -4,7 +4,7 @@ var op2:int = 20
 
 var result = op1/op2 as float
 
-print(result)
+print(result) //what will this print?
 
 var op3:float = 10.0
 var op4:float = 20.0
