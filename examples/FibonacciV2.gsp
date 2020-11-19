@@ -10,4 +10,7 @@ function fibonacci(n: int): int{
   return mem[n]
 }
 
+
+
+
 print(fibonacci(5))
