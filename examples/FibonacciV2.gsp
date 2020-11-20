@@ -13,4 +13,4 @@ function fibonacci(n: int): int{
 
 
 
-print(fibonacci(5))
+print(fibonacci(150))

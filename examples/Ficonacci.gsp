@@ -1,5 +1,6 @@
 
 function fibonacci(n: int): int{
+  //print("calling with ${n}")
    if (n < 2) {
       return 1 
    } 
