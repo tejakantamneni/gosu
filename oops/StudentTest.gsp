@@ -1,4 +1,6 @@
 
+print(Student.PI)
+
 var student = new Student("Student A")
 
 var gosu = new Course(1, "Gosu")

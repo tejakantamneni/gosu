@@ -1,6 +1,9 @@
 package oops
 
 class Student {
+  
+  public static final var PI:float = 3.14
+  
   private var _name: String as Name
   private var _courses: List<Course>
   
