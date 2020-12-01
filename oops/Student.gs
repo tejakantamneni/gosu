@@ -8,7 +8,18 @@ class Student {
   private var _courses: List<Course>
   
   construct(name: String){
-    this._name = name
+    this.Name = name
+  }
+  
+  property get Name() : String{
+    return _name
+  }
+  
+  property set Name(_n: String){
+    if (_n.length == 0){
+      throw new RuntimeException("name can't be empty")
+    }
+    _name = _n.toUpperCase()
   }
   
   function AddCourse(course: Course){
@@ -28,6 +39,11 @@ class Student {
       }
     }
     return null
+  }
+  
+  
+  override function toString():String{
+    return _name
   }
   
   function printGrades(){
