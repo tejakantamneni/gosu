@@ -1,13 +1,16 @@
 package interf
 
-class HeadphoneImpl implements Headphone {
+ //@Deprecated
+ @Deprecated("Replaced by so and so class")
+ class HeadphoneImpl implements Headphone {
    
+
   property get Name(): String{
     return "FSCJ"
   }
   
   override function increaseVolume(){
-    
+    print("volume increasing...")
   }
   
   override function decreaseVolume(){
