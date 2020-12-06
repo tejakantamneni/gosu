@@ -5,15 +5,18 @@ class Animal {
   var _numberOfLegs: int as NumberOfLegs
   var _vegetarian: boolean as Vegetarian
   
-  construct(){}
+  protected var _something:String as SomeThing
   
-  construct(name: String, noOfLegs: int, veg: boolean){
+  //construct(){}
+  
+  construct(final name: String, final noOfLegs: int, final veg: boolean){
+   print("constructor in Animal called")
    this._name = name
    this._numberOfLegs = noOfLegs 
    this._vegetarian = veg
   }
   
   function move(){
-    print("I am moving...")
+    print("${_name} is moving...")
   }
 }

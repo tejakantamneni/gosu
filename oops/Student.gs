@@ -1,6 +1,6 @@
 package oops
 
-class Student {
+class Student{
   
   private var _name: String as readonly Name
   private var _courses: List<Course>
