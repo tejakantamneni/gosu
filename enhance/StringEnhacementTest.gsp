@@ -1,0 +1,2 @@
+
+"FSCJ".myMethod()
