@@ -1,7 +1,9 @@
 package abstraction
 
 abstract class Policy {
-  abstract function issue()
+  
+  abstract function issue() 
+  
   abstract function rate()
   
   function renew(){

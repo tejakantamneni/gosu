@@ -1,1 +1,1 @@
-package annuses gw.lang.annotation.*@AnnotationUsage(UsageTarget.TypeTarget, UsageModifier.One)class Author implements IAnnotation{  private var _author : String as AuthorName  construct(a : String) {      _author = a   }}
+package annuses gw.lang.annotation.*@AnnotationUsage(UsageTarget.AllTarget, UsageModifier.One)class Author implements IAnnotation{  private var _author : String as AuthorName  construct(a : String) {      _author = a   }}

@@ -1,9 +1,20 @@
 uses oops.Student
 
-var animal:Animal = (Animal) new Cat("Tommy", 4, false, 100, "Red")
-var cat = new Cat("Tommy", 4, false, 100, "Red")
+var animal:Animal
+//var cat:Animal = new Cat("Tommy", 4, false, 100, "Red")
+//var cat:Animal = new Snake("Tommy", 4, false, 100)
 
-cat.move()
+//cat.move()
+
+var isCat = false
+
+if(isCat){
+  animal = new Cat("Tommy", 4, false, 100, "Red")
+}else{
+  animal = new Snake("Tommy", 4, false, 100)
+}
+
+animal.move()
 
 
 //var s = new Student("Test")

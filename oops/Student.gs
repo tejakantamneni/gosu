@@ -1,5 +1,6 @@
 package oops
 
+//@Deprecated("Test")
 class Student{
   
   private var _name: String as readonly Name

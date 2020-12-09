@@ -1,6 +1,20 @@
 
-var w = new Wish()
+uses oops.Student
 
-var returnsAnn = (typeof w).TypeInfo.Methods
+//
+//var w = new Wish()
+//
+//var returnsAnn = (typeof w).TypeInfo.Methods
+//
+//returnsAnn.forEach(\e -> print(e + " -- " +  e.getAnnotation(Returns)))
 
-returnsAnn.forEach(\e -> print(e + " -- " +  e.getAnnotation(Returns)))
+
+var s = new TestClass()
+
+//Reflection
+
+var info = (typeof s).TypeInfo.getAnnotation(Author)
+
+print(info)
+
+

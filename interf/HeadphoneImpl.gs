@@ -1,7 +1,7 @@
 package interf
 
  //@Deprecated
- @Deprecated("Replaced by so and so class")
+ @Deprecated("Replaced by so and so class, instead use NewHeadhPhoneImpl")
  class HeadphoneImpl implements Headphone {
    
 
