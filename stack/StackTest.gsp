@@ -1,17 +1,15 @@
+uses oops.Student
 
-var s = new Stack()
+var s = new Stack<Student>()
 
-s.push("A")
-s.push("B")
-s.push("C")
+s.push(new Student("Olga"))
+s.push(new Student("Teja"))
+s.push(new Student("Steven"))
 
-print(s.Size)
 
-print(s.pop())
+var k = s.pop()
+print(k)
 
-print(s.peek())
-
-print(s.pop())
-print(s.pop())
-
-print(s.Size)
+function add (i: int){
+  
+}

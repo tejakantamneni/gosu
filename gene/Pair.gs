@@ -1,6 +1,6 @@
 package gene
 
-class Pair<K, V> {
+class Pair<K extends Number, V> {
   var _key: K as Key
   var _val: V as Value
   

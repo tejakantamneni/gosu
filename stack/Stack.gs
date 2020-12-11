@@ -1,17 +1,17 @@
 package stack
 
-class Stack {
+class Stack<T> {
   
    var _size:int as readonly Size
-   var _top:Node
+   var _top:Node<T>
 
   construct(){
     _size = 0
   }
   
-  function push(_v: String){
+  function push(_v: T){
     //creating a new node object
-    var n = new Node(_v)
+    var n = new Node<T>(_v)
     //setting the next to current top
     n.Next = _top
     //make the top point to new element that we just pushed
@@ -19,7 +19,7 @@ class Stack {
     _size ++
   }
   
-  function pop(): String{
+  function pop(): T{
     //Check empty stack
     if(_top == null){
       return null
@@ -35,7 +35,7 @@ class Stack {
     return n
   }
   
-  function peek(): String{
+  function peek(): T{
     //Check empty stack
     if(_top == null){
       return null
