@@ -8,6 +8,8 @@ print(names)
 
 var nameList = new ArrayList<String>(){"John", "James", "Linda", "Taylor", "Anthony", "Jack", "John", "Linda"}
 
+
+
 var withoutDups = nameList.stream().collect(Collectors.toSet())
 
 print(withoutDups)
