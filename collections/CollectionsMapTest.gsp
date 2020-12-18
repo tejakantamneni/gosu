@@ -11,3 +11,5 @@ var coll: Collection<Person> = {p, p1, p2, p3, p4}
 //var names = coll.map(\x -> x.Name)
 
 //print(names)
+
+
