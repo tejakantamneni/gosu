@@ -9,7 +9,9 @@ try{
   // what should you do when this happens. e provides the details of exception
   print(e.Message)
   print(e.Cause)
+  e.printStackTrace()
 
 }finally{
   //always executes whether an exception happens or not
+  print("in finally...")
 }

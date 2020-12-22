@@ -7,6 +7,8 @@ var e4 = new Employee("Jack", "Claims", "Manager")
 
 var employeeList = {e, e1, e2, e3, e4}
 
+print(employeeList*.Name)
+
 var empMap = new HashMap<String, List<Employee>>()
 
 for (emp in employeeList){
