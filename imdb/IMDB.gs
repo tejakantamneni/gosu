@@ -41,7 +41,6 @@ class IMDB {
       choice = showMenu()
       switch(choice){
         case 1:
-          print("handle add")
           var movie = getMovieData()
           handleAddMovie(movie)
           break
