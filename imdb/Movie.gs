@@ -12,4 +12,8 @@ class Movie {
     this._releasedDate = new Date(relDate)
   }
   
+  override function toString():String{   
+     return("${Name},${ReleasedDate},${Rating}")    
+  }
+  
 }

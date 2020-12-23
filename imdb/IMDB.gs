@@ -11,10 +11,11 @@ class IMDB {
   }
   
   function getMovieData(): Movie{
+    scanner = new Scanner(System.in)
     print("Please enter movie name:")
-    var name = scanner.next()
+    var name = scanner.nextLine()
     print("Please enter Released Date (MM/DD/YYYY)")
-    var date = scanner.next()
+    var date = scanner.nextLine()
     print("Please enter the movie rating:")
     var rating = scanner.nextDouble()
     
@@ -28,6 +29,10 @@ class IMDB {
       moviesList = new ArrayList<Movie>()
     }
     moviesList.add(movie)
+  }
+  
+  function printAll(){
+    moviesList.forEach(\x -> print(x))
   }
   
   function run(){
@@ -50,7 +55,7 @@ class IMDB {
           print("handle delete")
           break
         case 5:
-          print("print all")
+          printAll()
           break
         default:
           System.exit(0)
@@ -67,6 +72,7 @@ class IMDB {
     print("----------------5. Print all----------------")
     print("----------------6. Exit----------------")
     print("Pick you choice....:")
+    scanner = new Scanner(System.in)
     var choice = scanner.nextInt()
     return choice
   }
