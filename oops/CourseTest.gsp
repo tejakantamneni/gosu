@@ -2,9 +2,12 @@
 
 var i:int
 
-print(i)
+//print(i)
 
-var c:Course = new Course(1, CourseType.Gosu)
+var c = new AnotherCourse(1, CourseType.Gosu)
 
-print(c)
+print(c.Name.toString())
+print(c.Name.toString().myLength())
+print(c.toString())
+print(c.toString().myLength())
 

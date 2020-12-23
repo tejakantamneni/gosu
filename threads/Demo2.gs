@@ -2,9 +2,11 @@ package threads
 
 class Demo2 implements Runnable {
   var _name: String as readonly Name
+  var _sleepTime: int as readonly SleepTime
   
-  construct(name: String){
+  construct(name: String, sleepTime: int){
       this._name = name
+      this._sleepTime = sleepTime
   }
   
   override function run(){
@@ -12,7 +14,7 @@ class Demo2 implements Runnable {
          var i = 15
          while(i > 0) {
             print("Thread: ${Name}, ${i}")
-            Thread.sleep(100)
+            Thread.sleep(SleepTime)
             i--
          }
       } catch (e) {
