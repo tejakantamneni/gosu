@@ -35,6 +35,15 @@ class IMDB {
     moviesList.forEach(\x -> print(x))
   }
   
+  function search(name: String){
+    var movie = moviesList.firstWhere(\x-> x.Name == name)
+    if(movie == null){
+      print("No moive found with matching criteria...")
+    }else{
+      print("Found: ${movie}")
+    }
+  }
+  
   function run(){
     var choice = -1
     do{
@@ -48,7 +57,10 @@ class IMDB {
           print("handle edit")
           break
         case 3:
-          print("handle search")
+          scanner = new Scanner(System.in)
+          print("Enter the name to search:")
+          var criteria = scanner.nextLine()
+          search(criteria)
           break
         case 4:
           print("handle delete")
